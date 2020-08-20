@@ -17,6 +17,19 @@
   line-height:24px;
   color:#000000;
 }
+.container2{
+  margin-right: 50px;
+  margin-left: 120px;
+  margin-top: 145px;
+  background-color:#fff;
+  padding:20px;
+  text-align: center;
+  align-items: center;
+  font-size:15px;
+  line-height:24px;
+  color:#000000;
+  border-radius: 10px;
+}
 .site-footer hr
 {
   border-top-color:#bbb;
@@ -201,3 +214,32 @@
   } 
   
   
+  .button1
+  {
+    position: absolute;
+    top: 25%;
+   
+    display: inline;
+    font-size: 50px;
+    border: 25px;
+ 
+    align-items: center;
+	  text-align: center; 
+  color: white;
+  
+  }
+  .btn1
+  {
+    padding: 30px;
+  padding-right: 150px;
+  
+ 
+  align-items: center;
+  background-color:#000000;
+  border-radius: 10px;
+  }
+  .button1:hover{
+    
+    cursor: pointer;
+    color: #EC5B24;
+  }

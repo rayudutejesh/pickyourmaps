@@ -205,14 +205,17 @@ nav
   	padding:0 10px;
 	position: relative; 
 }
+.container-grid
+{
+  margin-left: 80px;
+}
 /* #Slider 1 and slider2 style
 ================================================== */
 .container-fluid
 {
-	width: 92%;
-	background-color: #fff;
+    width: 95%;
     margin:0 auto;
-    padding-top: 20px;
+    padding: 0 0;
     overflow: hidden;
     position: relative;
 }
@@ -221,45 +224,40 @@ nav
 .slider3,
 .slider4
 {
-  
-  text-align: center;
   height: 380px;
   transition: transform .8s ease-in;
-  transform: translateX(1px);
+  transform: translateX(0px);
 }
 .button
 {
   position: absolute;
-	top: 30%;
+  top: 50%;
   background-color: white;
-  
   height:0;
   width: 0;
   padding: 0;
   margin:0; 
-  outline: #8167a9;
+  outline: none;
   z-index: 200;
 
 }
-
 .button__prev1,
 .button__prev2,
 .button__prev3,
 .button__prev4
 {
   display: none;
-  left: 5.5%;
+  left: 0.7%;
 }
 .button__prev1::before,
 .button__prev2::before,
 .button__prev3::before,
 .button__prev4::before
-
 {
-  content: url("data:image/svg+xml,%3csvg width='40px' height='40px' viewBox='0 0 70 70' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3ccircle id='path-1' cx='30' cy='30' r='30'%3e%3c/circle%3e%3cfilter x='-12.5%25' y='-9.2%25' width='125.0%25' height='125.0%25' filterUnits='objectBoundingBox' id='filter-2'%3e%3cfeMorphology radius='0.5' operator='dilate' in='SourceAlpha' result='shadowSpreadOuter1'%3e%3c/feMorphology%3e%3cfeOffset dx='0' dy='2' in='shadowSpreadOuter1' result='shadowOffsetOuter1'%3e%3c/feOffset%3e%3cfeGaussianBlur stdDeviation='2' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3e%3c/feGaussianBlur%3e%3cfeComposite in='shadowBlurOuter1' in2='SourceAlpha' operator='out' result='shadowBlurOuter1'%3e%3c/feComposite%3e%3cfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.20105865 0' type='matrix' in='shadowBlurOuter1'%3e%3c/feColorMatrix%3e%3c/filter%3e%3c/defs%3e%3cg id='Version-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Chevron-Left' transform='translate(35.000000%2c 33.000000) scale(-1%2c 1) translate(-35.000000%2c -33.000000) translate(5.000000%2c 3.000000)'%3e%3cg id='Oval-2'%3e%3cuse fill='black' fill-opacity='1' filter='url(%23filter-2)' xlink:href='%23path-1'%3e%3c/use%3e%3cuse stroke='%23E5E5E5' stroke-width='1' fill='white' fill-rule='evenodd' xlink:href='%23path-1'%3e%3c/use%3e%3c/g%3e%3cpolyline id='Path-3' stroke='%232F9BDB' stroke-width='2' points='26 22 35.1927962 31.1927962 26.0417983 40.3437941'%3e%3c/polyline%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
-	
-  width: 40px;
-  height: 40px;
+  content: url("data:image/svg+xml,%3csvg width='50px' height='50px' viewBox='0 0 70 70' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3ccircle id='path-1' cx='30' cy='30' r='30'%3e%3c/circle%3e%3cfilter x='-12.5%25' y='-9.2%25' width='125.0%25' height='125.0%25' filterUnits='objectBoundingBox' id='filter-2'%3e%3cfeMorphology radius='0.5' operator='dilate' in='SourceAlpha' result='shadowSpreadOuter1'%3e%3c/feMorphology%3e%3cfeOffset dx='0' dy='2' in='shadowSpreadOuter1' result='shadowOffsetOuter1'%3e%3c/feOffset%3e%3cfeGaussianBlur stdDeviation='2' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3e%3c/feGaussianBlur%3e%3cfeComposite in='shadowBlurOuter1' in2='SourceAlpha' operator='out' result='shadowBlurOuter1'%3e%3c/feComposite%3e%3cfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.20105865 0' type='matrix' in='shadowBlurOuter1'%3e%3c/feColorMatrix%3e%3c/filter%3e%3c/defs%3e%3cg id='Version-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Chevron-Left' transform='translate(35.000000%2c 33.000000) scale(-1%2c 1) translate(-35.000000%2c -33.000000) translate(5.000000%2c 3.000000)'%3e%3cg id='Oval-2'%3e%3cuse fill='black' fill-opacity='1' filter='url(%23filter-2)' xlink:href='%23path-1'%3e%3c/use%3e%3cuse stroke='%23E5E5E5' stroke-width='1' fill='white' fill-rule='evenodd' xlink:href='%23path-1'%3e%3c/use%3e%3c/g%3e%3cpolyline id='Path-3' stroke='%232F9BDB' stroke-width='2' points='26 22 35.1927962 31.1927962 26.0417983 40.3437941'%3e%3c/polyline%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+  
+  width: 70px;
+  height: 70px;
   outline: none;
 }
 .button__next1,
@@ -267,39 +265,38 @@ nav
 .button__next3,
 .button__next4
 {
-  left: 92.5%;
+  left: 95.3%;
 }
 .button__next1::before,
 .button__next2::before,
 .button__next3::before,
 .button__next4::before
+
 {
-  content:url("data:image/svg+xml,%3csvg width='40px' height='40px' viewBox='0 0 70 70' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3ccircle id='path-1' cx='30' cy='30' r='30'%3e%3c/circle%3e%3cfilter x='-12.5%25' y='-9.2%25' width='125.0%25' height='125.0%25' filterUnits='objectBoundingBox' id='filter-2'%3e%3cfeMorphology radius='0.5' operator='dilate' in='SourceAlpha' result='shadowSpreadOuter1'%3e%3c/feMorphology%3e%3cfeOffset dx='0' dy='2' in='shadowSpreadOuter1' result='shadowOffsetOuter1'%3e%3c/feOffset%3e%3cfeGaussianBlur stdDeviation='2' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3e%3c/feGaussianBlur%3e%3cfeComposite in='shadowBlurOuter1' in2='SourceAlpha' operator='out' result='shadowBlurOuter1'%3e%3c/feComposite%3e%3cfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.20105865 0' type='matrix' in='shadowBlurOuter1'%3e%3c/feColorMatrix%3e%3c/filter%3e%3c/defs%3e%3cg id='Version-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Chevron-right' transform='translate(5.000000%2c 3.000000)'%3e%3cg id='Oval-2'%3e%3cuse fill='black' fill-opacity='1' filter='url(%23filter-2)' xlink:href='%23path-1'%3e%3c/use%3e%3cuse stroke='%23E5E5E5' stroke-width='1' fill='white' fill-rule='evenodd' xlink:href='%23path-1'%3e%3c/use%3e%3c/g%3e%3cpolyline id='Path-3' stroke='%232F9BDB' stroke-width='2' points='26 22 35.1927962 31.1927962 26.0417983 40.3437941'%3e%3c/polyline%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
-  width: 40px;
-  height: 40px;
+  content:url("data:image/svg+xml,%3csvg width='50px' height='50px' viewBox='0 0 70 70' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3ccircle id='path-1' cx='30' cy='30' r='30'%3e%3c/circle%3e%3cfilter x='-12.5%25' y='-9.2%25' width='125.0%25' height='125.0%25' filterUnits='objectBoundingBox' id='filter-2'%3e%3cfeMorphology radius='0.5' operator='dilate' in='SourceAlpha' result='shadowSpreadOuter1'%3e%3c/feMorphology%3e%3cfeOffset dx='0' dy='2' in='shadowSpreadOuter1' result='shadowOffsetOuter1'%3e%3c/feOffset%3e%3cfeGaussianBlur stdDeviation='2' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3e%3c/feGaussianBlur%3e%3cfeComposite in='shadowBlurOuter1' in2='SourceAlpha' operator='out' result='shadowBlurOuter1'%3e%3c/feComposite%3e%3cfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.20105865 0' type='matrix' in='shadowBlurOuter1'%3e%3c/feColorMatrix%3e%3c/filter%3e%3c/defs%3e%3cg id='Version-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Chevron-right' transform='translate(5.000000%2c 3.000000)'%3e%3cg id='Oval-2'%3e%3cuse fill='black' fill-opacity='1' filter='url(%23filter-2)' xlink:href='%23path-1'%3e%3c/use%3e%3cuse stroke='%23E5E5E5' stroke-width='1' fill='white' fill-rule='evenodd' xlink:href='%23path-1'%3e%3c/use%3e%3c/g%3e%3cpolyline id='Path-3' stroke='%232F9BDB' stroke-width='2' points='26 22 35.1927962 31.1927962 26.0417983 40.3437941'%3e%3c/polyline%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+  width: 70px;
+  height: 70px;
   outline: none;
 }
 .card
 {
   position: absolute;
-  width: 40%;
-  border-radius: 5px;
+  width: 23%;
+  border-radius: 10px;
 }
 .card-img-top
 {
-	height: 175px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .card-title
 {
   margin: 0;
-  padding-top: 0.8rem;
   padding-left: .8rem;
 }
 .card-body
 {
-  padding: 0.8rem;
+  padding: .8rem;
 }
 
 /* #Primary style
@@ -556,7 +553,10 @@ body.dark .navbar-light .navbar-toggler-icon:before{
 body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
-
+.button1
+{
+	top:10% !important;
+}
 
 
 /* #Media
@@ -659,7 +659,7 @@ body.dark .logo img {
 .card
 {
    position: absolute;
-   width: 31%;
+   width: 23%;
 }	
 .button
 {

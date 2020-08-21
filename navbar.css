@@ -44,21 +44,27 @@ body{
 .navbar {
     transition: all 0.4s;
     background-color: #f1f3f8ea;
+	
+}
+.navbar .navbar-nav{
+	margin-right: -70px;
 }
 
 .navbar .nav-link {
-    color:#f1f3f8ea;
+	color:#f1f3f8ea;
+	display: block;
     
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color:#38d112;
-    text-decoration: none;
+    
 }
 
 .navbar .navbar-brand {
-    color:rgb(77, 75, 75);
+	color:rgb(77, 75, 75);
+	margin-left: -70px;
 }
 
 
@@ -112,8 +118,8 @@ body{
 
 body {
     min-height: 120vh;
-    background-color: #f1f3f8ea;
-    background-image: linear-gradient(135deg,#f1f3f8ea 0%, #c4e0e5 100%);
+    background-color: #fff;
+    background-image: linear-gradient(135deg,#fff 0%#fcfaff 100%);
 }
 
 /* #Side Navigatiom
@@ -123,20 +129,19 @@ body {
   background-color: white;
   position: fixed;
   width: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   padding-top: 50px;
   height: 75vh;
   z-index: 100;
-  margin-top: 1px;
+  margin-top: 20px;
   border:2px solid white;
   box-shadow:0 1px 0 2px #EC5B24;
   border-top-right-radius: 90px;
   border-bottom-right-radius: 90px;
-  border-top: 0;
   transition: .3s ease-in;
 }
 .nav__side
-{position: absolute;
+{position: relative;
   width: 100%;
   margin:-15px;
   height: 50vh;
@@ -360,10 +365,10 @@ h1{
 h7{
 	
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 40px;
+	font-size: 35px;
 	line-height: 1.2;
 	font-weight: 400;
-	color: #fff;
+	color: #555;
 	text-align: center;
 }
 p{
@@ -577,14 +582,14 @@ body.dark .dropdown-item {
 	color: #fff;
 }
 body.dark .navbar-light .navbar-toggler-icon {
-	border-bottom: 1px solid #fff;
+	
 }
 body.dark .navbar-light .navbar-toggler-icon:after, 
 body.dark .navbar-light .navbar-toggler-icon:before{
-	background-color: #fff;
+	
 }
 body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
+	
 }
 
 

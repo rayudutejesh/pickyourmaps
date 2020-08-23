@@ -18,6 +18,7 @@
   color:#000000;
 }
 .container2{
+  width: 550px;
   margin-right: 250px;
   margin-left: 180px;
   margin-top: 100px;
@@ -225,7 +226,7 @@
   .button1
   { 
     position: inherit;
-    margin-left: 45px;
+    margin-left: 135px;
     border: 2px solid #5f5e5e80;
     background-color: white;
     color:#5f5e5e80;

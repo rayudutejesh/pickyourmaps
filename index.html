@@ -7,40 +7,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="home.css"> 
+	
+    
+	<link rel="stylesheet" href="home.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Page Title </title>
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-md border sticky-top navbar-light bg">
+	
+	
+        <nav class="navbar navbar-expand-md  sticky-top navbar-light bg active">
 		    <!-- nav brand -->
-		   	<button class="navbar-button show" type="button" >
-		          <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <a class="navbar-brand ml-2"  href="">
-		   	<p>Find Your Maps</p>
-		    </a>
-		    <input type="text" name="search" class="searchbar--hide" placeholder="Search " />
-		        <ul class="navbar-nav">		             		   
-		              <li class="nav-item nav-link dropdown">
-		              	Login <span>&#9660</span>
-		              	<ul class="options">
-		              		<li class="nav-item nav-link">Google</li>
-		              		<li class="nav-item nav-link"> Gmail</li>
-		              		<li class="nav-item nav-link">Facebook</li>
-		              		<li class="nav-item nav-link">Twitter</li>
-		              	</ul>
-		              </li>
-		              
-		               <li class="nav-item nav-link">Home</li>
-		               <li class="nav-item nav-link">Contact</li>
-
-		               <li class="nav-item nav-link">About</li>
-
-		        </ul>
+		   	<a class="navbar-button show" type="button" >
+				<span class="navbar-toggler-icon"></span>
+			   </a>
+			<div class="container">
+				<a href="#" class="navbar-brand text-uppercase font-weight-bold ml-1">Pick Your Maps</a>
+				<div id="navbarSupportedContent" class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 	    <!-- </div>-->
     	</nav>
     	<!-- navgation end -->
@@ -108,58 +102,53 @@
 	    </div>
 		<!-- side nav end -->
     	<!--Break-->
-<div class="container-grid" >
-    <div class="container1">	
-    	<!--Front Page-->
-    	<div class="row"> 	
-	        <div class="container col-md-8">
-				<h1>My First Bootstrap Page</h1>
-		          <p>This part is inside a .container class.</p> 
-		          <p>The .container class provides a responsive fixed width container change.</p>
-			<div class="container2">
-				<div class="row">
-					<div class="col-md-7"> 
-				 		<h1>Make your plan
-				 			
-						 </h1>
-					</div>
-					<div class="col-md-5"> 
-						<div class="btn1">
-					    	<a class="button1" href="#" role="button">start</a>   
-						</div>	
-				</div>
-			</div>
-		    </div>	
-    	</div>
-	    <div class="container col-md-4 >
-			<div id="demo" class="carousel slide" data-ride="carousel">
-	          <!-- Indicators -->
-	          <ul class="carousel-indicators">
-	            <li data-target="#demo" data-slide-to="0" class="active"></li>
-	            <li data-target="#demo" data-slide-to="1"></li>
-	            <li data-target="#demo" data-slide-to="2"></li>
-	          </ul>
-	          <!-- The slideshow -->
-	          <div class="carousel-inner">
-	            <div class="carousel-item active">
-	              <img src="Venom.png">
-	            </div>
-	            <div class="carousel-item">
-	              <img src="Ant-Man.png">
-	            </div>
-	            <div class="carousel-item">
-				  <img src="IronMan.png">
-	            </div>
-	          </div>  
-	        <!-- Left and right controls -->
-	        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-	           <span class="carousel-control-prev-icon"></span>
-	        </a>
-	        <a class="carousel-control-next" href="#demo" data-slide="next">
-	            <span class="carousel-control-next-icon"></span>
-	        </a>				    
-	    </div>
-	        
+
+    	<div class="container1 ">	
+    		<!--Front Page-->
+    	 <div class="row"> 	
+         <div class="container col-md-8">
+
+			
+			<h1>My First Bootstrap Page</h1>
+	          <p>This part is inside a .container class.</p> 
+	          <p>The .container class provides a responsive fixed width container.</p>
+		 <div class="container2">
+		 	<div class="intersecting"></div>
+			 <div class="row ">
+					 <h7 >make your plan</h7>
+				    	<a class="button1" href="#" role="button">start</a>  
+			 </div>
+		 </div>
+			
+    	 </div>
+			
+        	
+          
+	        <div class="container col-md-4 >
+          				<div id="demo" class="carousel slide" data-ride="carousel">
+				          <!-- Indicators -->
+				
+				          <!-- The slideshow -->
+				          <div class="carousel-inner">
+				            <div class="carousel-item active">
+				              <img src="Venom.png">
+				            </div>
+				            <div class="carousel-item">
+				              <img src="img/Ant-Man.png">
+				            </div>
+				            <div class="carousel-item">
+							  <img src="img/IronMan.png">
+				            </div>
+				        </div>  
+				        <!-- Left and right controls -->
+				        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+				           <span class="carousel-control-prev-icon"></span>
+				        </a>
+				        <a class="carousel-control-next" href="#demo" data-slide="next">
+				            <span class="carousel-control-next-icon"></span>
+				        </a>				    
+				    </div>
+	        </div>
 
 	        </div>
 		</div>
@@ -167,21 +156,29 @@
 		<div class="adblock">
 			<div class="row">
 			   <div class="col-md-12"> 
-					<h1>Ad Banner</h1>
+					<i class="Ad Banner" type="text" >ad Banner</i>
 			   </div>
 			</div>
 		</div>
 
 				<!--advertising block end-->
 	      	<!--Slider-1 img-->
-			<div class="container-fluid slider1-container mt-5">
-				<span class="button button__prev1"></span>
+			<div class="container-fluid slider1-container">
+				<button1 class="button button__prev1 "type="button"><i class="fa fa-arrow-left" ></i></button1>
 				<div class="container-fluid" >
-					<h2 class="Slider__title">Editor's Picks of the Week </h2>
-		  			<div class="slider1 p-2">
+					<div class="row">
+						<div class="col">
+					       <h2 class="Slider__title">Editor's Picks of the Week </h2>
+						</div>
+						<div class="col-md-2">
+							<a type="button" class="btn btn-outline-info" href="#" role="button">view all</a>   
+						</div>
+					</div>
+							<div class="slider1 p-2">
+						  <div class="col-9">
 						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 1</h5>
+							  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+							  <div><h5 class="card-title">Card title 5</h5></div>
 							<div class="card-body">
 							    
 							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -189,8 +186,8 @@
 						</div>
 
 						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 2</h5>
+							  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+							  <div><h5 class="card-title">Card title 5</h5></div>
 							<div class="card-body">
 							 
 							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -198,8 +195,8 @@
 							</div>
 						</div>
 						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 3</h5>
+							  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+							  <div><h5 class="card-title">Card title 5</h5></div>
 							<div class="card-body">
 							   
 							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -208,8 +205,8 @@
 						</div>
 						
 						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							   <h5 class="card-title">Card title 4</h5>
+							  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+							  <div><h5 class="card-title">Card title 5</h5></div>
 							<div class="card-body">
 							   
 							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -218,8 +215,8 @@
 						</div>
 						
 						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 5</h5>
+							  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+							  <div><h5 class="card-title">Card title 5</h5></div>
 							<div class="card-body">
 							    
 							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -228,292 +225,297 @@
 						</div>
 						
 						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 6</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 7</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card1" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 8</h5>
+							  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+							  <div><h5 class="card-title">Card title 5</h5></div>
 							<div class="card-body">
 							    
 							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
 						</div>
 			       	</div>
-			       
+		  			</div>
 				</div>
-					<span class="button button__next1"></span>
+				<button1 role="button" class="button button__next1"><i class="fa fa-arrow-right" ></i></button1>
+
 			</div>
 			<!--Slider-1 end-->
 
-		<!--Slider-2 img-->
-			<div class="container-fluid slider2-container mt-5">
-				<span class="button button__prev2"></span>
-				<div class="container-fluid" >
-					<h2 class="Slider__title">Editor's Picks of the Week </h2>
-		  			<div class="slider2 p-2">
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 1</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 2</h5>
-							<div class="card-body">
-							 
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 3</h5>
-							<div class="card-body">
-							   
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							   <h5 class="card-title">Card title 4</h5>
-							<div class="card-body">
-							   
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 5</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 6</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 7</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card2" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 8</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-			       	</div>
-			       
+	<!--Slider-2-->
+	<div class="container-fluid slider2-container">
+		<button1 type="button" class="button button__prev2"><i class="fa fa-arrow-left" ></i></button1>
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col">
+				   <h2 class="Slider__title">Editor's Picks of the Week </h2>
 				</div>
-
-					<span class="button button__next2"></span>
-			</div>
-			<!--Slider-2 end-->
-			<!--Slider-3 img-->
-			<div class="container-fluid slider3-container mt-5">
-				<span class="button button__prev3"></span>
-				<div class="container-fluid" >
-					<h2 class="Slider__title">Editor's Picks of the Week </h2>
-		  			<div class="slider3 p-2">
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 1</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 2</h5>
-							<div class="card-body">
-							 
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 3</h5>
-							<div class="card-body">
-							   
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							   <h5 class="card-title">Card title 4</h5>
-							<div class="card-body">
-							   
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 5</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 6</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 7</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card3" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 8</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-			       	</div>
-			       
+				<div class="col-md-2">
+					<a type="button" class="btn btn-outline-info" href="#" role="button">view all</a>   
 				</div>
-
-					<span class="button button__next3"></span>
 			</div>
-			<!--Slider-3 end-->
-			<!--Slider-4 img-->
-			<div class="container-fluid slider4-container mt-5">
-				<span class="button button__prev4"></span>
-				<div class="container-fluid" >
-					<h2 class="Slider__title">Editor's Picks of the Week </h2>
-		  			<div class="slider4 p-2">
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 1</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
+			
 
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 2</h5>
-							<div class="card-body">
-							 
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 3</h5>
-							<div class="card-body">
-							   
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
+			  <div class="slider2 p-2">
+			   <div class="col-9">
+				<div class="card card2" >
+					  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" width="40%" alt="Card image cap">
+					  <h5 class="card-title">Card title 1</h5>
+					<div class="card-body">
 						
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							   <h5 class="card-title">Card title 4</h5>
-							<div class="card-body">
-							   
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 5</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    
-							</div>
-						</div>
-						
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 6</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 7</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-						<div class="card card4" >
-							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
-							  <h5 class="card-title">Card title 8</h5>
-							<div class="card-body">
-							    
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-			       	</div>
-			       
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					</div>
 				</div>
+			   </div>
+			   <div class="col-9">
 
-					<span class="button button__next4"></span>
+				<div class="card  card2" >
+					  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+					  <h5 class="card-title">Card title 2</h5>
+					<div class="card-body">
+					 
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						
+					</div>
+				</div>
+			   
 			</div>
-			<!--Slider-4 end-->
+			<div class="col-9">
+				<div class="card  card2 " >
+					  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+					  <h5 class="card-title">Card title 3</h5>
+					<div class="card-body">
+					   
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-9">
+				<div class="card  card2" >
+					  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+					   <h5 class="card-title">Card title 4</h5>
+					<div class="card-body">
+					   
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						
+					</div>
+				</div>
+			   </div>
+			   <div class="col-9">
+				<div class="card  card2 " >
+					  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+					  <h5 class="card-title">Card title 5</h5>
+					<div class="card-body">
+						
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-9">
+				<div class="card  card2 " >
+					  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+					  <h5 class="card-title">Card title 6</h5>
+					<div class="card-body">
+						
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					</div>
+				</div>
+			   </div>
+			   </div>
+		   
+		</div>
+		<button1 type="button" class="button button__next2"><i class="fa fa-arrow-right" ></i></button1>
 
+	</div>
+	</div>
+<!--Slider-2 end-->
+
+<!--Slider-3-->
+<div class="container-fluid slider2-container">
+	<button1 type="button" class="button button__prev3"><i class="fa fa-arrow-left" ></i></button1>
+	<div class="container-fluid" >
+		
+		<div class="row">
+						<div class="col">
+					       <h2 class="Slider__title">Editor's Picks of the Week </h2>
+						</div>
+						<div class="col-md-2">
+							<a type="button" class="btn btn-outline-info" href="#" role="button">view all</a>   
+						</div>
+					</div>
+		
+
+		  <div class="slider3 p-2">
+		   <div class="col-9">
+			<div class="card card3" >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" width="40%" alt="Card image cap">
+				  <h5 class="card-title">Card title 1</h5>
+				<div class="card-body">
+					
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+		   </div>
+		   <div class="col-9">
+
+			<div class="card  card3" >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				  <h5 class="card-title">Card title 2</h5>
+				<div class="card-body">
+				 
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+		   
+		</div>
+		<div class="col-9">
+			<div class="card  card3 " >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				  <h5 class="card-title">Card title 3</h5>
+				<div class="card-body">
+				   
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-9">
+			<div class="card  card3" >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				   <h5 class="card-title">Card title 4</h5>
+				<div class="card-body">
+				   
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+		   </div>
+		   <div class="col-9">
+			<div class="card  card3 " >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				  <h5 class="card-title">Card title 5</h5>
+				<div class="card-body">
+					
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-9">
+			<div class="card  card3 " >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				  <h5 class="card-title">Card title 6</h5>
+				<div class="card-body">
+					
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+		   </div>
+		   </div>
+	   
+	</div>
+	<button1 type="button" class="button button__next3"><i class="fa fa-arrow-right" ></i></button1>
+
+</div>
+</div>
+<!--Slider-3 end-->
+<!--Slider-4-->
+<div class="container-fluid slider4-container">
+	<button1 type="button" class="button button__prev4"><i class="fa fa-arrow-left" ></i></button1>
+	<div class="container-fluid" >
+		
+		<div class="row">
+						<div class="col">
+					       <h2 class="Slider__title">Editor's Picks of the Week </h2>
+						</div>
+						<div class="col-md-2">
+							<a type="button" class="btn btn-outline-info" href="#" role="button">view all</a>   
+						</div>
+					</div>
+		
+
+		  <div class="slider4 p-2">
+		   <div class="col-9">
+			<div class="card card4" >
+				  <img class="card-img-top" src="https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9&s=50827fd8476bfdffe6e04bc9ae0b8c02" width="40%" alt="Card image cap">
+				  <h5 class="card-title">Card title 1</h5>
+				<div class="card-body">
+					
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+		   </div>
+		   <div class="col-9">
+
+			<div class="card  card4" >
+				  <img class="card-img-top" src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=8aae34cf35df31a592f0bef16e6342ef" alt="Card image cap">
+				  <h5 class="card-title">Card title 2</h5>
+				<div class="card-body">
+				 
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+		   
+		</div>
+		<div class="col-9">
+			<div class="card  card4 " >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				  <h5 class="card-title">Card title 3</h5>
+				<div class="card-body">
+				   
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-9">
+			<div class="card  card4" >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				   <h5 class="card-title">Card title 4</h5>
+				<div class="card-body">
+				   
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+		   </div>
+		   <div class="col-9">
+			<div class="card  card4 " >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				  <h5 class="card-title">Card title 5</h5>
+				<div class="card-body">
+					
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-9">
+			<div class="card  card4 " >
+				  <img class="card-img-top" src="https://source.unsplash.com/random/800x600" alt="Card image cap">
+				  <h5 class="card-title">Card title 6</h5>
+				<div class="card-body">
+					
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+		   </div>
+		   </div>
+	   
+	</div>
+	<button1 type="button" class="button button__next4"><i class="fa fa-arrow-right" ></i></button1>
+
+</div>
+</div>
+<!--Slider-4 end-->
 
 
 	          
@@ -525,6 +527,7 @@
 				<div class="col-12">
 				<h2><p>Our trusted travel partners around the world</p></h2>
 				</div>
+
 			</div>
 			<hr>
 		  </div>
@@ -536,6 +539,7 @@
 			  </div>
 	
 			  <div class="col-md-6">
+
 				<h6><p>logo</p></h6>
 				  
 				
@@ -628,37 +632,31 @@
           </div>
         </div>
   </footer>
-</div>
 </body>
 <script type="text/javascript">
  function navItemToggle()
  {
- 	let search_bar=document.querySelector(".searchbar--hide");
+ 	
  	let nav_bar=document.querySelector(".navbar");
  	let nav_list=document.querySelector(".navbar-nav");
  	let nav_button=document.querySelector(".navbar-button");
- 	let options=document.querySelector(".options");
- 	let header=document.querySelector(".empty");
- 	let option={root:null,thershold:0,rootmargin:""}
+ 	
+ 	let header=document.querySelector(".intersecting");
+ 	console.log(header)
+ 	
+ 	let option={root:null,threshold:0,rootmargin:""}
  	let observer=new IntersectionObserver(function(entries,observer)
  		{
  			//if intersecting hide the search bar in nav
+ 			
  			if(entries[0].isIntersecting)
  			{
- 				search_bar.className="searchbar--hide";
- 				nav_bar.style.backgroundColor="rgb(0,0,0,0)";
- 				nav_list.style.backgroundColor="rgb(0,0,0,0)";
- 				nav_button.style.backgroundColor="rgb(0,0,0,0)";
- 				options.style.backgroundColor="rgb(0,0,0,0)";
+ 				
+ 				nav_bar.classList.toggle('active');
  			}
  			else
  			{
- 				//if not intersecting show the search bar
- 				search_bar.className="searchbar";
- 				nav_bar.style.backgroundColor="#007eff";
- 				nav_list.style.backgroundColor="#007eff";
- 				nav_button.style.backgroundColor="#007eff";
- 				options.style.backgroundColor="#007eff";
+ 				nav_bar.classList.toggle('active');
  			}
  		},option);
  	observer.observe(header)
@@ -676,8 +674,10 @@ function sideNavItemToggle()
  	
  	for(let i=0;i<nav_link.length;i++)
  	{
+ 		
  		nav__side__container.addEventListener("mouseover",showText); 		
  		nav__side__container.addEventListener("mouseout",hideText);
+
  	}
  	function showText(isbutton)
  	{
@@ -822,13 +822,16 @@ function setCards(cards_name,slider_name,button_prev_name,button_next_name)
     }
 function main()
 {
-	navItemToggle()
+	
 	sideNavItemToggle();
+	navItemToggle();
 	setCards(".card1",".slider1",".button__prev1",".button__next1");
 	setCards(".card2",".slider2",".button__prev2",".button__next2");
 	setCards(".card3",".slider3",".button__prev3",".button__next3");
 	setCards(".card4",".slider4",".button__prev4",".button__next4");
+	
 }
+
 main();
 
 </script>

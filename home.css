@@ -32,10 +32,11 @@
   font-size:15px;
   line-height:24px;
   color:#000000;
-  border-radius: 30px;
+  border-radius: 10px;
   border: 1px solid #555;
   
 }
+
 .site-footer hr
 {
   border-top-color:#bbb;
@@ -224,14 +225,14 @@
   .button1
   { 
     position: inherit;
-    margin-left: 20px;
+    margin-left: 45px;
     border: 2px solid #5f5e5e80;
     background-color: white;
     color:#5f5e5e80;
     padding:  10px 20px;
     font-size: 25px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
     align-items: center;
   }
   .btn1

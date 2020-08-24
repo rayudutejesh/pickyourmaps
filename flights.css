@@ -40,21 +40,21 @@ body, html {
   .flights{
       position: absolute;
       top: 40%;
-      height: 80px;
+      height: 66px;
       width:100%;
       left: 0;
       background-color: #ffffff;
       border-radius: 5px;
       text-align:left;
-      padding: 10px 20px 0;
+      padding: 8px 17px 0;
       
   }
   .trip-types{
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 9%;
     height: 100px;
-    width: 80%;
+    right: 3%;
     border-radius: 5px;
     text-align:left;
     align-items: left;
@@ -64,10 +64,14 @@ body, html {
     background-color:skyblue;
 
 }
+.trip-types .nav-item{
+    color:#000;
+   padding-right: 3px;
+}
   .flights-adblock{
         position: relative;
         margin-top: -75px;
-        left: 6%;
+        left: 9%;
         width: 88%;
         background-color:rgb(187, 187, 187);
         padding:20px;

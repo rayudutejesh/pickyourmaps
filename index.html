@@ -7,9 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	
-    
-	<link rel="stylesheet" href="home.css"> 
+	<script src="navbart.js"></script>
+    <link rel="stylesheet" href="home.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,43 +16,12 @@
 </head>
 
 <body>
-	
-	
-        <nav class="navbar navbar-expand-md  sticky-top navbar-light bg">
-		    <!-- nav brand -->
-		   	<a class="navbar-button show" type="button" >
-				<span class="navbar-toggler-icon"></span>
-			   </a>
-			<div class="container">
-				<a href="#" class="navbar-brand text-uppercase font-weight-bold">Pick Your Maps</a>
-				<div class="start ">
-					<div class="row">				
-			       <h6>make your plan</h6>
-					<a class="strt btn-outline-info" href="#" role="button">start</a> 
-					</div>
-				</div>
-				
-				
-
-				<div id="navbarSupportedContent" class="collapse navbar-collapse">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
-						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
-						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-	    <!-- </div>-->
-    	</nav>
-    	<!-- navgation end -->
-   		<div class="empty"></div>
     	<!-- side nav -->
     	<div class="container nav__side__container" >
     		<div class="nav__side">
 				<ul class="nav__item">
 		            <li class="nav__list">
-		                <a href="#" class="side__nav-link">
+		                <a href="#" class="side__nav-link active">
 		             		<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
 		             		<span class="text"> A</span>
 		              	</a>
@@ -65,7 +33,13 @@
 		                </a> 
 		            </li>
 		            
-		            <li class="line"></li>
+					<li class="line"></li>
+					<li class="nav__list">
+						<a href="flights.html"  class="side__nav-link">
+							 <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span> 
+							<span class="text">flights</span></a>
+					   </a>            	
+				   </li>
 		            
 		            <li class="nav__list"> 
 		              	<a href="#"  class="side__nav-link">
@@ -88,7 +62,7 @@
 		            <li class="nav__list">
 		             	<a href="#"  class="side__nav-link">
 		              		<span class="icon"><i class="fa fa-taxi" aria-hidden="true"></i></span> 
-		             		<span class="text">Cabs</span></a>
+		             		<span class="text">cabs</span></a>
 		                </a>            	
 		            </li>
 		   
@@ -112,7 +86,43 @@
 		<!-- side nav end -->
     	<!--Break-->
 
-    	<div class="container1 ">	
+	<div class="container1 ">	
+	
+        <nav class="navbar navbar-expand-md  fixed-top navbar-light bg">
+		    <!-- nav brand -->
+		   	<a class="navbar-button show" type="button" >
+				<span class="navbar-toggler-icon"></span>
+			   </a>
+			<div class="container">
+				<a href="#" class="navbar-brand text-uppercase font-weight-bold">Pick Your Maps</a>
+				<div class="start ">
+					<div class="row">	
+						<div class="col-md-8">			
+				   			<h6>make your plan</h6>
+						</div>
+						<div class="col-md-4">
+							<a class="strt btn-outline-info" href="#" role="button">start</a> 
+					
+						</div>
+				
+					</div>
+				</div>
+				
+
+				<div id="navbarSupportedContent" class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+	    <!-- </div>-->
+    	</nav>
+    	<!-- navgation end -->
+
+    	
     		<!--Front Page-->
     	   <div class="row"> 	
             	<div class="container col-md-8">
@@ -160,6 +170,7 @@
 
 	        </div>
 		</div>
+		
 		<!--advertising block-->
 		<div class="adblock">
 			<div class="row">

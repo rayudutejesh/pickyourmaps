@@ -42,9 +42,8 @@ body{
 */
 
 .navbar {
-    transition: all 1s;
-    background-color: #f1f3f8ea;
-	
+	transition: all 1s;
+
 }
 .navbar .navbar-nav{
 	margin-right: -70px;
@@ -63,7 +62,7 @@ body{
 }
 
 .navbar .navbar-brand {
-	color:rgb(77, 75, 75);
+	color:#000;
 	margin-left: -70px;
 }
 
@@ -76,38 +75,34 @@ body{
 .start{
 	background-color: rgb(245, 245, 245);
 	display: none;
-	
-  }
+}
   .navbar.active .start{
 	display: initial;
 	border-radius: 5px;
 	width: 500px;
-	height: 30px;
-	padding-left: 30px ;
+	height: 32px;
+	padding-left: 20px; 
 	padding-top: 4px;
 	border: 2px solid #5f5e5e80;
   }
   .strt{
-  position:relative;
-  margin-left: 275px;
-  bottom: 3px;
-  height: 24px;
+  position: absolute;
   padding: 0 20px;
+  right: 15px;
+  bottom: 3px;
   border: 2px solid #5f5e5e80;
   background-color: white;
   color:#5f5e5e80;
   font-size: 15px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
   text-align: center;
 }
 .strt:hover{
 	background-color:  rgb(193, 221, 250);
 	color: white;
 }
-.strt .button__nav{
-	
-}
+
 .navbar.active .nav-link {
     color: #555(233, 71, 71);
 }
@@ -162,11 +157,11 @@ body {
   background-color: white;
   position: fixed;
   width: 70px;
+  margin-top: 60px;
+  height:82.5vh;
   padding-bottom: 50px;
   padding-top: 50px;
-  height: 75vh;
   z-index: 100;
-  margin-top: 20px;
   border:2px solid white;
   box-shadow:2px 1px 2px 2px  rgb(193, 221, 250);
   border-top-right-radius: 90px;
@@ -214,6 +209,8 @@ body {
 {
 	color: #5f5e5e80;
 }
+
+
 .side__nav-link:hover
 {
   width: 80%;
@@ -225,6 +222,9 @@ body {
   border-radius: 5px;
   color:  rgb(193, 221, 250);
   transform: translateY(-5px) ;
+}
+.side__nav-link.active,.side__nav-link:focus{
+	color:  rgb(193, 221, 250);
 }
 .full__container
 {

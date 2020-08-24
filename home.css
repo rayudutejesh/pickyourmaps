@@ -12,9 +12,10 @@
 .container1
 {
   background-color:#f1f3f8ea;
-  padding:45px 0 20px;
+  padding:100px 0 20px;
   font-size:15px;
   line-height:24px;
+  height: 600px;
   color:#000000;
 }
 .container2{
@@ -247,9 +248,10 @@
     color: white;
   }
   .adblock{
-    margin-right: 70px;
-    margin-left: 70px;
+    position: relative;
     margin-top: -50px;
+    left: 6%;
+    width: 88%;
     background-color:rgb(187, 187, 187);
     padding:20px;
     text-align: center;
@@ -257,7 +259,7 @@
     font-size:15px;
     line-height:75px;
     color:#EC5B24;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .adblock.text{
     color: #EC5B24;

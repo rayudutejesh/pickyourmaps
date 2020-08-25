@@ -119,8 +119,8 @@
         </div>
     </div>
     <!--sidenav end-->
+    <div class="trip__container">
         <div class="trip-types">  
-                        
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
@@ -136,15 +136,13 @@
             <div class="tab-content">
                 <div id="home" class="container tab-pane active"><br>
                     <div class="flights">
-            
-                
                         <div class="row form">
                             <div class="col-md-auto p-0">
                                 <h6>from</h6>
                                 <input type="text" name="from" class="from1">
                             </div>
                             <div class="col-md-auto p-0">
-                                <input type="button" name="swap" class="button__swap" id="1">                                                 
+                                <input type="button" name="swap" class="button__swap" id="1" onclick="swapFromTo(event)">                                                 
                             </div>
                             <div class="col-md-auto p-0">
                                 <h6>to</h6>
@@ -190,7 +188,7 @@
                                <input type="text" name="from" class="from2">
                             </div>
                             <div class="col-md-auto p-0">
-                                <input type="button" name="swap" class="button__swap" id="2">
+                                <input type="button" name="swap" class="button__swap" id="2" onclick="swapFromTo(event)">
                             </div>
                             <div class="col-md-auto p-0">
                                 <h6>to</h6>
@@ -238,7 +236,7 @@
                                <input type="text" name="from" class="from3">                               
                             </div>
                             <div class="col-md-auto p-0">
-                                <input type="button" name="swap" class="button__swap" id="3">
+                                <input type="button" name="swap" class="button__swap" id="3" onclick="swapFromTo(event)">
                                 
                             </div>
                             <div class="col-md-auto p-0">
@@ -282,6 +280,7 @@
                 </div>
             </div>            
         </div>    
+</div>
 </div>
   <!--banner end-->
   <div class="flights-adblock">

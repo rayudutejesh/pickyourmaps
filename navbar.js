@@ -162,27 +162,8 @@ function setCards(cards_name,slider_name,button_prev_name,button_next_name)
         }
       }
     }
-function swapFromTo(count)
+function swapFromTo(event)
 {
-  let start;
-  let buttons_swap=document.querySelectorAll(".button__swap");
-  
-  if(count>=0)
-  {
-    start=count+1;
-  }
-  else
-  {
-    start=0;
-  }
-  
-  for(let i=start;i<buttons_swap.length;i++)
-  {
-  buttons_swap[i].addEventListener("click",swap);
-  }
-  
-  function swap(event)
-  {
     let id=event.target.id;
     console.log(id)
     let from_node=document.querySelector(".from"+id);
@@ -194,9 +175,6 @@ function swapFromTo(count)
     to_node.value=temp_val;
     console.log(from_node.value,to_node.value);
     console.log(from_node,to_node);
-
-
-  }
 }
 function addFlightForm()
 {
@@ -205,13 +183,15 @@ function addFlightForm()
   var count=0;
   function add()
   {
-    let form='<div class="row form"><div class="col-md-auto p-0 ">\
+      if(count<4)
+      {
+        let form='<div class="row form"><div class="col-md-auto p-0 ">\
                                 <h6>from</h6>\
                                <input type="text" name="from" class="from3'+count+'">\
                                \
                             </div>\
                             <div class="col-md-auto p-0">\
-                                <input type="button" name="swap" class="button__swap" id="3'+count+'">\
+                                <input type="button" name="swap" class="button__swap" id="3'+count+'" onclick="swapFromTo(event)">\
                                 \
                             </div>\
                             <div class="col-md-auto p-0">\
@@ -228,10 +208,14 @@ function addFlightForm()
                             </div>\
                             </div>\
     '
-    $(".multi__city").prepend(form);
-    count+=1;
+        $(".multi__city").prepend(form);
+        count+=1;
+        if(count==4)
+        {
+        $(".button__addflight").remove();
+        }
+      }
 
-    swapFromTo(count);
   }
 }
 function main()
@@ -242,7 +226,6 @@ function main()
 	setCards(".card2",".slider2",".button__prev2",".button__next2");
 	setCards(".card3",".slider3",".button__prev3",".button__next3");
 	setCards(".card4",".slider4",".button__prev4",".button__next4");
-  swapFromTo();
   addFlightForm();
 	
 }

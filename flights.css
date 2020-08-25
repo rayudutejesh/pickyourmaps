@@ -51,13 +51,14 @@ body, html {
   }
   .trip-types{
     position: absolute;
-    top: 50%;
-    left: 9%;
+    top: 10%;
+    left: 20%;
     height: 100px;
     right: 3%;
     border-radius: 5px;
     text-align:left;
     align-items: left;
+    z-index: 100;
 }
 .trip-types .nav-link{
     color:#000;

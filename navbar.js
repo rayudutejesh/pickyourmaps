@@ -178,10 +178,9 @@ function addFlightForm()
   button__addflight.addEventListener("click",add);
   
   window.count=1;
-  window.num=1;
   function add()
   {
-      if(window.num<5)
+      if(window.count<5)
       {
 
         let form='<div class="row form">\
@@ -217,9 +216,8 @@ function addFlightForm()
                   </div>'
         $(".multi__city").prepend(form);
         window.count+=1;
-        window.num+=1;
         console.log("after add ",count ,counts)
-        if(window.num==5)
+        if(window.count==5)
         {
         $(".button__addflight").hide();
         }
@@ -235,8 +233,8 @@ function removeForm(event)
   window.count-=1;
   window.counts.splice(id[1],1);
   window.counts.push(id[1]);
-  console.log(counts,"after remove",count)
-  if(window.num==4)
+  console.log(counts,"after remove")
+  if(window.count==4)
   {
         $(".button__addflight").show();
   }

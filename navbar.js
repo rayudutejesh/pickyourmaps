@@ -165,16 +165,12 @@ function setCards(cards_name,slider_name,button_prev_name,button_next_name)
 function swapFromTo(event)
 {
     let id=event.target.id;
-    console.log(id)
     let from_node=document.querySelector(".from"+id);
     let to_node=document.querySelector(".to"+id);
-    console.log(from_node.value,to_node.value);
     //swapping the value 
     let temp_val=from_node.value;
     from_node.value=to_node.value;
     to_node.value=temp_val;
-    console.log(from_node.value,to_node.value);
-    console.log(from_node,to_node);
 }
 function addFlightForm()
 {
@@ -185,29 +181,37 @@ function addFlightForm()
   {
       if(count<4)
       {
-        let form='<div class="row form"><div class="col-md-auto p-0 ">\
-                                <h6>from</h6>\
-                               <input type="text" name="from" class="from3'+count+'">\
-                               \
-                            </div>\
-                            <div class="col-md-auto p-0">\
-                                <input type="button" name="swap" class="button__swap" id="3'+count+'" onclick="swapFromTo(event)">\
-                                \
-                            </div>\
-                            <div class="col-md-auto p-0">\
-                                <h6>to</h6>\
-                                <input type="text" name="to" class="to3'+count+'">\
-                            </div>\
-                            <div class="col-md-auto p-0">\
-                                <h6>departure</h6>\
-                               <input type="text" name="departure">  \
-                            </div>\
-                            <div class="col-md-auto p-0">\
-                                <h6>return</h6>\
-                                <input type="text" name="return"> \
-                            </div>\
-                            </div>\
-    '
+        let form='<div class="row form">\
+                    <div class="form__container3'+count+' d-flex">\
+                        <div class="col-md-auto p-0 ">\
+                            <h6>from</h6>\
+                            <input type="text" name="from" class="from3'+count+'">\
+                        </div>\
+                        <div class="col-md-auto p-0">\
+                            <input type="button" name="swap" class="button__swap" id="3'+count+'" onclick="swapFromTo(event)">\
+                        </div>\
+                        <div class="col-md-auto p-0">\
+                            <h6>to</h6>\
+                            <input type="text" name="to" class="to3'+count+'">\
+                        </div>\
+                        <div class="col-md-auto p-0">\
+                            <h6>departure</h6>\
+                            <input type="text" name="departure">  \
+                        </div>\
+                        <div class="col-md-auto p-0">\
+                            <h6>return</h6>\
+                            <input type="text" name="return"> \
+                       </div>\
+                       <div class="col-md-auto">\
+                          <button class="button__close" type="button"  onclick="removeForm(event)" id="3'+count+'">\
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" style="width: 1.125rem; height: 1.125rem;" id="3'+count+'">\
+                              <path d="M12 9.172l4.243-4.243a2 2 0 1 1 2.828 2.828L14.828 12l4.243 4.243a2 2 0 1 1-2.828 2.828L12 14.828l-4.243 4.243a2 2 0 1 1-2.828-2.828L9.172 12 4.929 7.757A2 2 0 1 1 7.757 4.93L12 9.172z"id="3'+count+'">\
+                              </path>\
+                            </svg>\
+                          </button>\
+                        </div>\
+                    </div>\
+                  </div>'
         $(".multi__city").prepend(form);
         count+=1;
         if(count==4)
@@ -217,6 +221,12 @@ function addFlightForm()
       }
 
   }
+}
+function removeForm(event)
+{
+  let id=event.target.id;
+  
+  $(".form__container"+id).remove();
 }
 function main()
 {

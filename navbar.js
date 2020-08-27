@@ -7,7 +7,6 @@ $(function () {
         }
     });
 });
-window.counts=["0","1","2","3","4"];
 function sideNavItemToggle()
 {
 
@@ -172,19 +171,25 @@ function swapFromTo(event)
     from_node.value=to_node.value;
     to_node.value=temp_val;
 }
+
+//global var for flights form tracking
+window.counts=["0","1","2","3","4"];
 function addFlightForm()
 {
-  let button__addflight=document.querySelector(".button__addflight");
-  button__addflight.addEventListener("click",add);
-  
-  window.count=1;
+
+  let button_addflight=document.querySelector(".button__addflight");
+  button_addflight.addEventListener("click",add);
+  //set count 2 because we already have 2 form in html 
+  window.count=2;
+
   function add()
   {
+      //only allow user to add 5 form 
       if(window.count<5)
       {
 
         let form='<div class="row form">\
-                    <div class="form__container3'+window.counts[window.count]+' d-flex">\
+                    <div class="form__container3'+window.counts[window.count]+' d-flex flex-wrap">\
                         <div class="col-md-auto p-0 ">\
                             <h6>from</h6>\
                             <input type="text" name="from" class="from3'+window.counts[window.count]+'">\
@@ -215,28 +220,52 @@ function addFlightForm()
                     </div>\
                   </div>'
         $(".multi__city").prepend(form);
+        //increase the count 
         window.count+=1;
-        console.log("after add ",count ,counts)
+        //enable the  all close the button 
+        let button_close=document.querySelectorAll(".button__close");
+        for(let i=0;i<button_close.length;i++)
+        {
+          button_close[i].style.opacity=1;
+          button_close[i].disabled=false;
+        }
+        //if the no of form is 5 hide the add flight button 
         if(window.count==5)
         {
         $(".button__addflight").hide();
         }
       }
-
   }
 }
 function removeForm(event)
 {
+  //getting unique id for the form 
   let id=event.target.id;
-  
+  //remove the form 
   $(".form__container"+id).remove();
+  //finding the closed form index no in array
+  let index=window.counts.indexOf(id[1]);
+  //remove that num from array
+  window.counts.splice(index,1);
+  //decrease the counter 
   window.count-=1;
-  window.counts.splice(id[1],1);
+  //push back the same unquie id to array for reuse 
   window.counts.push(id[1]);
-  console.log(counts,"after remove")
-  if(window.count==4)
+  //if the no of form less than 5 show the add flight button 
+  if(window.count<5)
   {
         $(".button__addflight").show();
+  }
+  //if the no of form less than 3 disable the close button
+  if(window.count<3)
+  {
+
+    let button_close=document.querySelectorAll(".button__close");
+    for(let i=0;i<button_close.length;i++)
+        {
+          button_close[i].style.opacity=0.5;
+          button_close[i].disabled=true;
+        }
   }
 }
 function main()
@@ -247,8 +276,7 @@ function main()
 	setCards(".card2",".slider2",".button__prev2",".button__next2");
 	setCards(".card3",".slider3",".button__prev3",".button__next3");
 	setCards(".card4",".slider4",".button__prev4",".button__next4");
-  addFlightForm();
-	
+  addFlightForm();	
 }
 
 main();

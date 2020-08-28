@@ -191,8 +191,8 @@ function addFlightForm()
         let form='<div class="row form">\
                     <div class="form__container3'+window.counts[window.count]+' d-flex flex-wrap">\
                         <div class="col-md-auto p-0 ">\
-                            <h6>from</h6>\
-                            <input type="text" name="from" class="from3'+window.counts[window.count]+'">\
+                            <h6>From</h6>\
+                            <input type="text" name="From" class="from3'+window.counts[window.count]+'" placeholder="From">\
                         </div>\
                         <div class="col-md-auto p-0">\
                             <input type="button" name="swap" class="button__swap" id="3'+window.counts[window.count]+'" onclick="swapFromTo(event)">\
@@ -203,11 +203,11 @@ function addFlightForm()
                         </div>\
                         <div class="col-md-auto p-0">\
                             <h6>departure</h6>\
-                            <input type="text" name="departure">  \
+                            <input type="date" name="departure">  \
                         </div>\
                         <div class="col-md-auto p-0">\
                             <h6>return</h6>\
-                            <input type="text" name="return"> \
+                            <input type="date" name="return"> \
                        </div>\
                        <div class="col-md-auto">\
                           <button class="button__close" type="button"  onclick="removeForm(event)" id="3'+window.counts[window.count]+'">\

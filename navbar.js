@@ -7,13 +7,15 @@ $(function () {
         }
     });
 });
+
 function sideNavItemToggle()
 {
 
  	let nav_link=document.querySelectorAll(".side__nav-link"); 	
  	let nav__side__container=document.querySelector(".nav__side__container");
  	let nav_button=document.querySelector(".navbar-button");
-  nav_button.addEventListener("click",()=>showText(1));
+ 	nav_button.addEventListener("click",()=>showText(1));
+
  	let texts=document.querySelectorAll(".text");
  	
  	for(let i=0;i<nav_link.length;i++)
@@ -144,7 +146,8 @@ function setCards(cards_name,slider_name,button_prev_name,button_next_name)
       }
        //function to move the prev card
       function prevcard()
-      { 
+      {
+        
         if(prev_card>0)
         {
               next_card=prev_card;
@@ -160,123 +163,19 @@ function setCards(cards_name,slider_name,button_prev_name,button_next_name)
             next_button.style.display="inline";
         }
       }
+
+
     }
-function swapFromTo(event)
-{
-    let id=event.target.id;
-    let from_node=document.querySelector(".from"+id);
-    let to_node=document.querySelector(".to"+id);
-    //swapping the value 
-    let temp_val=from_node.value;
-    from_node.value=to_node.value;
-    to_node.value=temp_val;
-}
-
-//global var for flights form tracking
-window.counts=["0","1","2","3","4"];
-function addFlightForm()
-{
-
-  let button_addflight=document.querySelector(".button__addflight");
-  button_addflight.addEventListener("click",add);
-  //set count 2 because we already have 2 form in html 
-  window.count=2;
-
-  function add()
-  {
-      //only allow user to add 5 form 
-      if(window.count<5)
-      {
-
-        let form='<div class="row form">\
-                    <div class="form__container3'+window.counts[window.count]+' d-flex flex-wrap">\
-                        <div class="col-md-auto p-0 ">\
-                            <h6>From</h6>\
-                            <input type="text" name="From" class="from3'+window.counts[window.count]+'" placeholder="From">\
-                        </div>\
-                        <div class="col-md-auto p-0">\
-                            <input type="button" name="swap" class="button__swap" id="3'+window.counts[window.count]+'" onclick="swapFromTo(event)">\
-                        </div>\
-                        <div class="col-md-auto p-0">\
-                            <h6>to</h6>\
-                            <input type="text" name="to" class="to3'+window.counts[window.count]+'">\
-                        </div>\
-                        <div class="col-md-auto p-0">\
-                            <h6>departure</h6>\
-                            <input type="date" name="departure">  \
-                        </div>\
-                        <div class="col-md-auto p-0">\
-                            <h6>return</h6>\
-                            <input type="date" name="return"> \
-                       </div>\
-                       <div class="col-md-auto">\
-                          <button class="button__close" type="button"  onclick="removeForm(event)" id="3'+window.counts[window.count]+'">\
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" style="width: 1.125rem; height: 1.125rem;" id="3'+window.counts[window.count]+'">\
-                              <path d="M12 9.172l4.243-4.243a2 2 0 1 1 2.828 2.828L14.828 12l4.243 4.243a2 2 0 1 1-2.828 2.828L12 14.828l-4.243 4.243a2 2 0 1 1-2.828-2.828L9.172 12 4.929 7.757A2 2 0 1 1 7.757 4.93L12 9.172z"id="3'+window.counts[window.count]+'">\
-                              </path>\
-                            </svg>\
-                          </button>\
-                        </div>\
-                    </div>\
-                  </div>'
-        $(".multi__city").prepend(form);
-        //increase the count 
-        window.count+=1;
-        //enable the  all close the button 
-        let button_close=document.querySelectorAll(".button__close");
-        for(let i=0;i<button_close.length;i++)
-        {
-          button_close[i].style.opacity=1;
-          button_close[i].disabled=false;
-        }
-        //if the no of form is 5 hide the add flight button 
-        if(window.count==5)
-        {
-        $(".button__addflight").hide();
-        }
-      }
-  }
-}
-function removeForm(event)
-{
-  //getting unique id for the form 
-  let id=event.target.id;
-  //remove the form 
-  $(".form__container"+id).remove();
-  //finding the closed form index no in array
-  let index=window.counts.indexOf(id[1]);
-  //remove that num from array
-  window.counts.splice(index,1);
-  //decrease the counter 
-  window.count-=1;
-  //push back the same unquie id to array for reuse 
-  window.counts.push(id[1]);
-  //if the no of form less than 5 show the add flight button 
-  if(window.count<5)
-  {
-        $(".button__addflight").show();
-  }
-  //if the no of form less than 3 disable the close button
-  if(window.count<3)
-  {
-
-    let button_close=document.querySelectorAll(".button__close");
-    for(let i=0;i<button_close.length;i++)
-        {
-          button_close[i].style.opacity=0.5;
-          button_close[i].disabled=true;
-        }
-  }
-}
 function main()
 {
 	
 	sideNavItemToggle();
+	
 	setCards(".card1",".slider1",".button__prev1",".button__next1");
 	setCards(".card2",".slider2",".button__prev2",".button__next2");
 	setCards(".card3",".slider3",".button__prev3",".button__next3");
 	setCards(".card4",".slider4",".button__prev4",".button__next4");
-  addFlightForm();	
+	
 }
 
 main();

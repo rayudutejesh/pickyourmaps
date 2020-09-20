@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css"> 
+	<link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Hotel </title>
+    <!--https://www.makemytrip.com/hotels/hotel-details/?hotelId=200701122121192419&mtkeys=defaultMtkey&_uCurrency=INR&checkin=09192020&checkout=09202020&city=CTGOI&country=IN&lat=15.319851&lng=73.90191&locusId=CTGOI&locusType=city&rank=1&roomStayQualifier=2e0e&searchText=Goa%2C%20India&visitorId=567dc1b6-caf8-4675-9fdd-85b3440624df-->
+</head>
+<style type="text/css">
+.hotel__container
+{
+	text-align: center;
+}
+.searchbar
+{
+	width:100%;
+	height: 30px;
+	background-color: white;
+}
+
+.hotel__summary
+{
+	display: flex;
+	background-color: gray;
+	height: 300px;
+	padding-left: 70px;
+}
+.hotel__imgslider
+{
+	background-color: white;
+	height: 250px;
+	margin: 15px;
+	
+	width: 50%;
+}
+.hotel__pricebar__container
+{
+	height: 250px;
+	width: 25%;
+	margin: 15px;
+}
+.hotel__pricebar
+{
+	background-color: white;	
+	height: 100px;
+	margin: 15px;
+
+}
+.hotel__review
+{
+	background-color: white;	
+	height: 100px;
+	margin: 15px;
+	
+}
+.hotel__offers
+{
+	width: 100%;
+    padding-left: 75px;
+    height: 150px;
+}
+.hotel__features
+{
+    width: 100%;
+    padding-left: 75px;
+    height: 300px;
+    background-color: gray;
+}
+</style>
+<body>
+	<!-- side nav -->
+    <div class="container nav__side__container" >
+    		<div class="nav__side">
+				<ul class="nav__item">
+		            <li class="nav__list">
+		                <a href="#" class="side__nav-link ">
+		             		<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
+		             		<span class="text"> A</span>
+		              	</a>
+		            </li>
+		            <li class="nav__list">
+		                <a href="#"  class="side__nav-link">
+			              	<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
+			             	<span class="text">B</span></a>
+		                </a> 
+		            </li>
+		            
+					<li class="line"></li>
+					<li class="nav__list">
+						<a href="flights.html"  class="side__nav-link">
+							 <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span> 
+							<span class="text">flights</span></a>
+					   </a>            	
+				   </li>
+		            
+		            <li class="nav__list"> 
+		              	<a href="#"  class="side__nav-link active">
+		              		<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span> 
+		             		<span class="text">Hotels</span></a>
+		                </a> 
+		            </li>
+		            <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon"><i class="fa fa-train" aria-hidden="true"></i></span> 
+		             		<span class="text">Train</span></a>
+		                </a> 
+		            </li>
+		            <li class="nav__list">
+		              	<a href="#"  class="side__nav-link">
+		              		<span class="icon"><i class="fa fa-bus" aria-hidden="true"></i></span> 
+		             		<span class="text">Bus</span></a>
+		                </a> 
+		            </li>
+		            <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon"><i class="fa fa-taxi" aria-hidden="true"></i></span> 
+		             		<span class="text">cabs</span></a>
+		                </a>            	
+		            </li>
+		   
+		            <li class="line"></li>
+		   
+		            <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
+		             		<span class="text">C</span></a>
+		               </a> 
+		            </li>
+		            <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
+		             		<span class="text">D</span></a>
+		               </a> 
+		            </li>
+		        </ul>
+			</div>
+	</div>
+	<!-- side nav end -->
+   	<!--Break-->
+   	<div class="hotel__container">
+   		<div class="searchbar">	
+   			search bar
+   		</div>
+   		<section class="hotel__summary">
+		   		<div class="hotel__imgslider">	
+		   			img slider 
+		   		</div>
+		   		<div class="hotel__pricebar__container">
+			   		<div class="hotel__pricebar">
+			   			price bar	
+			   		</div>
+			   		<div class="hotel__review">	
+			   			 review 
+			   		</div>
+		   		</div>
+   		</section>
+   		<section> 
+   		<div class="hotel__offers">	
+   			wifi swiming pool ...
+   		</div>
+   		<div class="hotel__features">
+   			rooms facility scrolling 
+   		</div>
+
+   		<!-- Site footer --> 
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+					<h2><p>Our trusted travel partners around the world</p></h2>
+					</div>
+				</div>
+				<hr>
+			  </div>
+			  <div class="container">
+				<div class="row">
+				  <div class="col-6">
+					<h6>pickyourmap</h6>
+					<p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+				  </div>	
+				  <div class="col-md-6">
+					<h6><p>logo</p></h6>					
+				  </div>			
+				</div>
+				<hr>
+			  </div>
+	        <div class="container">
+	          <div class="row">
+	            <div class="col-2">
+	              <h6>About</h6>
+	              <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code.</p>
+	            </div>
+	            <div class="col-2">
+	              <h6>Categories</h6>
+	              <ul class="footer-links">
+	                <li><a href="#">C</a></li>
+	                <li><a href="#">UI Design</a></li>
+	                <li><a href="#">PHP</a></li>
+	                <li><a href="#">Java</a></li>
+	                <li><a href="#">Android</a></li>
+	                <li><a href="#">Templates</a></li>
+	              </ul>
+	            </div>
+	            <div class="col-2">
+	                <h6>Categories</h6>
+	                <ul class="footer-links">
+	                  <li><a href="#">C</a></li>
+	                  <li><a href="#">UI Design</a></li>
+	                  <li><a href="#">PHP</a></li>
+	                  <li><a href="#">Java</a></li>
+	                  <li><a href="#">Android</a></li>
+	                  <li><a href="#">Templates</a></li>
+	                </ul>
+	              </div>
+	              <div class="col-2">
+	                <h6>Categories</h6>
+	                <ul class="footer-links">
+	                  <li><a href="#">C</a></li>
+	                  <li><a href="#">UI Design</a></li>
+	                  <li><a href="#">PHP</a></li>
+	                  <li><a href="#">Java</a></li>
+	                  <li><a href="#">Android</a></li>
+	                  <li><a href="#">Templates</a></li>
+	                </ul>
+	              </div>
+	              <div class="col-2">
+	                <h6>Categories</h6>
+	                <ul class="footer-links">
+	                  <li><a href="#">C</a></li>
+	                  <li><a href="#">UI Design</a></li>
+	                  <li><a href="#">PHP</a></li>
+	                  <li><a href="#">Java</a></li>
+	                  <li><a href="#">Android</a></li>
+	                  <li><a href="#">Templates</a></li>
+	                </ul>
+	              </div>
+	  
+	            <div class="col-2">
+	              <h6>Quick Links</h6>
+	              <ul class="footer-links">
+	                <li><a href="#">About Us</a></li>
+	                <li><a href="#">Contact Us</a></li>
+	                <li><a href="#">Contribute</a></li>
+	                <li><a href="#">Privacy Policy</a></li>
+	                <li><a href="#">Sitemap</a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <hr>
+	        </div>
+	        <div class="container">
+	          <div class="row">
+	            <div class="col-md-8 col-sm-6 col-xs-12">
+	              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+	           <a href="#">FindYourMap</a>.
+	              </p>
+	            </div>
+	            <div class="col-md-4 col-sm-6 col-xs-12">
+	              <ul class="social-icons">
+	                <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+	                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+	                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+	              </ul>
+	            </div>
+	          </div>
+	        </div>
+	  </footer>
+   	</div>
+	
+</body>
+</html>
